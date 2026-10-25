@@ -1,8 +1,11 @@
-# World at War online connection guide
+# WaW Crossplay Guide
+
+World at War multiplayer setup for PS3, RPCS3, and Xenia Netplay.
 
 This guide connects *Call of Duty: World at War* competitive multiplayer to a
 community-run recreation of the game's Demonware online services. It covers
 physical PS3, RPCS3, and the Xbox 360 multiplayer game in **Xenia Netplay**.
+It also includes a setup tool and launcher for Xenia Netplay.
 
 **Live server status:** [WaW PS3 Server dashboard](http://137.184.156.200:8081/)
 — check players online, active games, open sessions, and recent player activity.
