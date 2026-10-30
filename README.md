@@ -7,7 +7,7 @@ community-run recreation of the game's Demonware online services. It covers
 physical PS3, RPCS3, and the Xbox 360 multiplayer game in **Xenia Netplay**.
 It also includes a setup tool and launcher for Xenia Netplay.
 
-**Live server status:** [WaW PS3 Server dashboard](http://137.184.156.200:8081/)
+**Live server status:** [WaW server dashboard](http://157.230.65.227:8081/dashboard/)
 — check players online, active games, open sessions, and recent player activity.
 
 For PS3 and RPCS3, install game update **1.07** before connecting. This is the
@@ -30,7 +30,7 @@ versions have not yet been verified.
 2. Keep your normal IP and connection settings, but set **DNS Setting** to
    **Manual**.
 3. Set **Primary DNS** to `67.222.156.250`.
-4. Do not use a public secondary DNS. If that doesn't work, you can try `1.1.1.1`, `2.2.2.2`, or `8.8.8.8`.
+4. Do not configure a public secondary DNS; it can bypass the WaW server records.
 5. Save the settings and test the connection.
 6. Fully restart *World at War*, select **Multiplayer**, then **Play Online**.
 
@@ -44,16 +44,23 @@ take up to three automatic attempts.
 3. Under **Network**, set **Network Status** to **Connected** and
    **PSN Status** to **RPCN**.
 4. Set **DNS** to `67.222.156.250`.
-5. Leave **IP/Hosts switches** empty and save the custom configuration.
-6. Fully exit and restart RPCS3, then open multiplayer and select
+5. Paste this entire line into **IP/Hosts switches**:
+
+   ```text
+   cod5-ps3.auth.mmp3.demonware.net==157.230.65.227&&cod5-ps3-live.lsg.mmp3.demonware.net==157.230.65.227&&cod5-ps3-dev.lsg.mmp3.demonware.net==157.230.65.227&&cod5-ps3-cert.lsg.mmp3.demonware.net==157.230.65.227&&stun.us.demonware.net==157.230.65.227&&stun.eu.demonware.net==157.230.65.227
+   ```
+
+6. Save the custom configuration, fully exit and restart RPCS3, then open
+   multiplayer and select
    **Play Online**.
 
 Use a different RPCN account for each player.
 
 ## Xenia Netplay
 
-This requires a compatible **Xenia Netplay** build. Standard Xenia builds are
-not supported by the setup launcher.
+This requires the
+[official Xenia Canary Netplay release](https://github.com/AdrianCassar/xenia-canary/releases/latest).
+Standard Xenia builds are not supported by the setup launcher.
 
 1. Keep `xenia_canary_netplay.exe`, `portable.txt`, and
    `xenia-canary-netplay.config.toml` together. Open Xenia once, then close it.
