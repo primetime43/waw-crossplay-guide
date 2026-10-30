@@ -44,15 +44,13 @@ take up to three automatic attempts.
 3. Under **Network**, set **Network Status** to **Connected** and
    **PSN Status** to **RPCN**.
 4. Set **DNS** to `67.222.156.250`.
-5. Paste this entire line into **IP/Hosts switches**:
-
-   ```text
-   cod5-ps3.auth.mmp3.demonware.net==157.230.65.227&&cod5-ps3-live.lsg.mmp3.demonware.net==157.230.65.227&&cod5-ps3-dev.lsg.mmp3.demonware.net==157.230.65.227&&cod5-ps3-cert.lsg.mmp3.demonware.net==157.230.65.227&&stun.us.demonware.net==157.230.65.227&&stun.eu.demonware.net==157.230.65.227
-   ```
-
-6. Save the custom configuration, fully exit and restart RPCS3, then open
-   multiplayer and select
+5. Leave **IP/Hosts switches** empty and save the custom configuration.
+6. Fully exit and restart RPCS3, then open multiplayer and select
    **Play Online**.
+
+The finished per-game network settings should look like this:
+
+![RPCS3 custom network settings using the WaW DNS server with empty IP/Hosts switches](docs/screenshots/rpcs3-network-settings.png)
 
 Use a different RPCN account for each player.
 
