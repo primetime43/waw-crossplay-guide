@@ -14,15 +14,22 @@ For PS3 and RPCS3, install game update **1.07** before connecting. This is the
 latest update for the releases currently used with this server; other regional
 versions have not yet been verified.
 
-**Jump to:** [Physical PS3](#physical-ps3) · [RPCS3](#rpcs3) ·
-[Xenia Netplay](#xenia-netplay) · [Cross-platform proof](#cross-platform-proof) ·
-[Quick fixes](#quick-fixes)
+## Contents
+
+- [Physical PS3](#physical-ps3)
+- [RPCS3](#rpcs3)
+- [Xenia Netplay](#xenia-netplay)
+- [Cross-platform proof](#cross-platform-proof)
+- [Quick fixes](#quick-fixes)
 
 | Platform | Server setting |
 | --- | --- |
 | Physical PS3 | DNS `67.222.156.250` |
 | RPCS3 | DNS `67.222.156.250` |
 | Xenia Netplay | API `http://157.230.65.227:8081/xenia/` |
+
+Thanks to [PS Rewired](https://psrewired.com/) for adding the WaW records to
+their DNS service used by physical PS3 and RPCS3 players.
 
 ## Physical PS3
 
